@@ -690,84 +690,61 @@ h4 {
    SERVICES
    ======================================== */
 .services {
-    background: var(--gray-100);
-}
-
-.services-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 32px;
-}
-
-.service-card {
     background: var(--white);
-    padding: 48px 40px;
-    border: 1px solid var(--gray-200);
-    border-radius: var(--radius-lg);
+}
+
+.services-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.service-row {
+    display: grid;
+    grid-template-columns: 80px 1.5fr 2fr;
+    gap: 40px;
+    padding: 48px 0;
+    border-bottom: 1px solid var(--gray-200);
+    align-items: center;
+    transition: var(--transition);
     position: relative;
-    overflow: hidden;
-    transition: var(--transition);
+    cursor: default;
 }
 
-.service-card::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 4px;
-    background: linear-gradient(90deg, var(--primary), var(--primary-light));
-    transform: scaleX(0);
-    transform-origin: left;
-    transition: var(--transition-slow);
+.service-row:first-child {
+    border-top: 1px solid var(--gray-200);
 }
 
-.service-card:hover {
-    transform: translateY(-4px);
-    box-shadow: var(--shadow-md);
-    border-color: var(--gray-300);
+.service-row:hover {
+    padding-left: 24px;
+    padding-right: 24px;
+    background: var(--gray-50);
 }
 
-.service-card:hover::before {
-    transform: scaleX(1);
-}
-
-.service-number {
+.service-row-number {
     font-family: var(--font-heading);
-    font-size: 3.5rem;
-    font-weight: 900;
-    color: var(--gray-100);
-    line-height: 1;
-    margin-bottom: 16px;
+    font-size: 1.25rem;
+    color: var(--gray-400);
+    font-weight: 500;
+}
+
+.service-row-title {
+    font-size: clamp(1.5rem, 3vw, 2.5rem);
+    font-weight: 800;
+    color: var(--dark);
+    margin: 0;
     transition: var(--transition);
 }
 
-.service-card:hover .service-number {
-    color: var(--primary-glow);
-}
-
-.service-icon {
-    width: 48px;
-    height: 48px;
-    margin-bottom: 20px;
-}
-
-.service-icon svg {
-    width: 100%;
-    height: 100%;
+.service-row:hover .service-row-title {
     color: var(--primary);
+    transform: translateX(10px);
 }
 
-.service-card h3 {
-    font-size: 1.25rem;
-    font-weight: 700;
-    margin-bottom: 12px;
-}
-
-.service-card p {
-    font-size: 0.95rem;
-    color: var(--gray-500);
+.service-row-desc {
+    font-size: 1.05rem;
+    color: var(--gray-600);
     line-height: 1.8;
+    margin: 0;
 }
 
 /* ========================================
@@ -1259,8 +1236,18 @@ h4 {
     }
 
     /* Services */
-    .services-grid {
+    .service-row {
         grid-template-columns: 1fr;
+        gap: 16px;
+        padding: 32px 0;
+    }
+    .service-row:hover {
+        padding-left: 0;
+        padding-right: 0;
+        background: transparent;
+    }
+    .service-row:hover .service-row-title {
+        transform: none;
     }
 
     /* Products */
