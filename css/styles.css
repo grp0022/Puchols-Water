@@ -378,7 +378,7 @@ h4 {
 .hero-overlay {
     position: absolute;
     inset: 0;
-    background: rgba(10, 15, 25, 0.65); /* Dark wash to ensure text readability */
+    background: rgba(10, 15, 25, 0.35); /* Reduced dark wash for clearer image visibility */
 }
 
 .hero-particles {
