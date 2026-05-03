@@ -222,6 +222,7 @@ h4 {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: relative;
 }
 
 .nav-logo img {
@@ -253,6 +254,9 @@ h4 {
 .nav-menu {
     display: flex;
     gap: 8px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .nav-link {
@@ -1227,7 +1231,9 @@ h4 {
     .nav-menu {
         position: fixed;
         top: 0;
+        left: auto;
         right: -100%;
+        transform: none;
         width: 280px;
         height: 100vh;
         background: var(--white);
