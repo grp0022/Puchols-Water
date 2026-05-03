@@ -167,7 +167,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 `${currentLang === 'es' ? 'Mensaje' : 'Message'}:\n${message}`
             );
 
-            window.location.href = `mailto:sales@pucholswater.com?subject=${subject}&body=${body}`;
+            window.location.href = `mailto:edwin.puchols@pucholswater.com?subject=${subject}&body=${body}`;
 
             // Show success feedback
             const btn = contactForm.querySelector('button[type="submit"]');
