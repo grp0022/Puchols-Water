@@ -1220,8 +1220,7 @@ h4 {
         font-size: 0.75rem;
     }
     .top-bar-quote {
-        margin-top: 2px;
-        font-size: 0.75rem;
+        display: none;
     }
 
     /* Nav */
