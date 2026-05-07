@@ -150,7 +150,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // ---------- CONTACT FORM ----------
     const contactForm = document.getElementById('contactForm');
     if (contactForm) {
-        contactForm.addEventListener('submit', (e) => {
+        contactForm.addEventListener('submit', async (e) => {
             e.preventDefault();
 
             const name = document.getElementById('formName').value;
@@ -158,33 +158,62 @@ document.addEventListener('DOMContentLoaded', () => {
             const phone = document.getElementById('formPhone').value;
             const message = document.getElementById('formMessage').value;
 
-            // Build mailto link
-            const subject = encodeURIComponent(
-                currentLang === 'es'
-                    ? `Consulta Web - ${name}`
-                    : `Website Inquiry - ${name}`
-            );
-            const body = encodeURIComponent(
-                `${currentLang === 'es' ? 'Nombre' : 'Name'}: ${name}\n` +
-                `Email: ${email}\n` +
-                `${currentLang === 'es' ? 'Teléfono' : 'Phone'}: ${phone}\n\n` +
-                `${currentLang === 'es' ? 'Mensaje' : 'Message'}:\n${message}`
-            );
+            const subject = currentLang === 'es' ? `Consulta Web - ${name}` : `Website Inquiry - ${name}`;
 
-            window.location.href = `mailto:edwin.puchols@pucholswater.com?subject=${subject}&body=${body}`;
-
-            // Show success feedback
             const btn = contactForm.querySelector('button[type="submit"]');
             const originalText = btn.textContent;
-            btn.textContent = currentLang === 'es' ? 'Mensaje Enviado!' : 'Message Sent!';
-            btn.style.background = '#25D366';
-            btn.style.borderColor = '#25D366';
+            
+            // Show loading state
+            btn.textContent = currentLang === 'es' ? 'Enviando...' : 'Sending...';
+            btn.disabled = true;
 
+            try {
+                const response = await fetch('https://api.web3forms.com/submit', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'Accept': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        access_key: 'YOUR_ACCESS_KEY_HERE', // Reemplazar con el verdadero Access Key
+                        subject: subject,
+                        from_name: name,
+                        email: email,
+                        phone: phone,
+                        message: message,
+                        replyto: email
+                    })
+                });
+
+                const result = await response.json();
+
+                if (response.status === 200) {
+                    // Success
+                    btn.textContent = currentLang === 'es' ? '¡Mensaje Enviado!' : 'Message Sent!';
+                    btn.style.background = '#25D366';
+                    btn.style.borderColor = '#25D366';
+                    contactForm.reset();
+                } else {
+                    // API Error
+                    btn.textContent = currentLang === 'es' ? 'Error al enviar' : 'Error sending';
+                    btn.style.background = '#ff3333';
+                    btn.style.borderColor = '#ff3333';
+                    console.error('Form submission error:', result);
+                }
+            } catch (error) {
+                // Network Error
+                console.error('Error submitting form:', error);
+                btn.textContent = currentLang === 'es' ? 'Error de conexión' : 'Connection Error';
+                btn.style.background = '#ff3333';
+                btn.style.borderColor = '#ff3333';
+            }
+
+            // Restore button after 3 seconds
             setTimeout(() => {
                 btn.textContent = originalText;
                 btn.style.background = '';
                 btn.style.borderColor = '';
-                contactForm.reset();
+                btn.disabled = false;
             }, 3000);
         });
     }
