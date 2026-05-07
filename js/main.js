@@ -98,39 +98,43 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // ---------- LANGUAGE SWITCHER ----------
     let currentLang = 'en';
-    const langToggle = document.getElementById('langToggle');
+    const langToggles = document.querySelectorAll('.lang-toggle');
     const translatableElements = document.querySelectorAll('[data-en]');
 
-    langToggle.addEventListener('click', () => {
-        currentLang = currentLang === 'en' ? 'es' : 'en';
+    langToggles.forEach(langToggle => {
+        langToggle.addEventListener('click', () => {
+            currentLang = currentLang === 'en' ? 'es' : 'en';
 
-        // Update toggle button
-        const spans = langToggle.querySelectorAll('span');
-        if (currentLang === 'es') {
-            spans[0].classList.remove('lang-active');
-            spans[0].classList.add('lang-inactive');
-            spans[1].classList.remove('lang-inactive');
-            spans[1].classList.add('lang-active');
-        } else {
-            spans[0].classList.remove('lang-inactive');
-            spans[0].classList.add('lang-active');
-            spans[1].classList.remove('lang-active');
-            spans[1].classList.add('lang-inactive');
-        }
+            // Update all toggle buttons
+            langToggles.forEach(toggle => {
+                const spans = toggle.querySelectorAll('span');
+                if (currentLang === 'es') {
+                    spans[0].classList.remove('lang-active');
+                    spans[0].classList.add('lang-inactive');
+                    spans[1].classList.remove('lang-inactive');
+                    spans[1].classList.add('lang-active');
+                } else {
+                    spans[0].classList.remove('lang-inactive');
+                    spans[0].classList.add('lang-active');
+                    spans[1].classList.remove('lang-active');
+                    spans[1].classList.add('lang-inactive');
+                }
+            });
 
-        // Update all translatable elements
-        translatableElements.forEach(el => {
-            const text = el.getAttribute(`data-${currentLang}`);
-            if (text) {
-                el.textContent = text;
-            }
+            // Update all translatable elements
+            translatableElements.forEach(el => {
+                const text = el.getAttribute(`data-${currentLang}`);
+                if (text) {
+                    el.textContent = text;
+                }
+            });
+
+            // Update HTML lang attribute
+            document.documentElement.lang = currentLang;
+
+            // Update form placeholders
+            updateFormLabels();
         });
-
-        // Update HTML lang attribute
-        document.documentElement.lang = currentLang;
-
-        // Update form placeholders
-        updateFormLabels();
     });
 
     function updateFormLabels() {
