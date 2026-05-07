@@ -467,6 +467,7 @@ h4 {
 
 .hero-title-line {
     display: block;
+    white-space: nowrap;
 }
 
 .hero-title-line.accent {
@@ -481,6 +482,7 @@ h4 {
     max-width: 600px;
     margin: 0 auto 40px;
     line-height: 1.8;
+    text-align: justify;
     opacity: 0;
     animation: fadeInUp 0.8s ease forwards 0.6s;
 }
@@ -1339,5 +1341,9 @@ h4 {
     .hero-badge {
         font-size: 0.6rem;
         letter-spacing: 2px;
+    }
+
+    .hero-title {
+        font-size: clamp(1.5rem, 8vw, 2.2rem);
     }
 }
