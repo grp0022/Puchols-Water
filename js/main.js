@@ -175,7 +175,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         'Accept': 'application/json'
                     },
                     body: JSON.stringify({
-                        access_key: 'YOUR_ACCESS_KEY_HERE', // Reemplazar con el verdadero Access Key
+                        access_key: '4e7b02a2-4168-496b-9a26-42407e067747',
                         subject: subject,
                         from_name: name,
                         email: email,
