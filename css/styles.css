@@ -628,12 +628,13 @@ h4 {
     color: var(--gray-600);
     margin-bottom: 20px;
     line-height: 1.9;
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: justify;
 }
 
 .about-lead {
-    font-size: 1.15rem;
-    color: var(--gray-700) !important;
-    font-weight: 500;
+    /* Removed custom lead styling so it matches other paragraphs */
 }
 
 .about-stats {
