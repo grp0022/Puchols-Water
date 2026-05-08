@@ -226,7 +226,7 @@ h4 {
 }
 
 .nav-logo img {
-    height: 90px;
+    height: 115px;
     width: auto;
     transition: var(--transition);
 }
@@ -248,7 +248,7 @@ h4 {
 }
 
 .navbar.scrolled .nav-logo img {
-    height: 95px;
+    height: 105px;
 }
 
 .nav-menu {
@@ -1247,6 +1247,12 @@ h4 {
     }
     .nav-logo {
         margin: 0 auto;
+    }
+    .nav-logo img {
+        height: 85px;
+    }
+    .navbar.scrolled .nav-logo img {
+        height: 75px;
     }
     .nav-actions > .lang-toggle {
         display: none; /* Hide original in header */
