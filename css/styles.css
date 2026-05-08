@@ -1106,6 +1106,15 @@ h4 {
     color: var(--gray-800);
     font-size: 0.9rem;
     transition: var(--transition);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.footer-contact .contact-icon {
+    width: 16px;
+    height: 16px;
+    color: var(--primary);
 }
 
 .footer-contact a:hover {
