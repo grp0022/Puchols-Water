@@ -1061,7 +1061,7 @@ h4 {
 }
 
 .footer-logo {
-    height: 150px;
+    height: 180px;
     width: auto;
     margin-bottom: 24px;
 }
@@ -1075,7 +1075,7 @@ h4 {
 
 .footer-links h4,
 .footer-contact h4 {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     font-weight: 700;
     letter-spacing: 2px;
     text-transform: uppercase;
@@ -1089,7 +1089,7 @@ h4 {
 
 .footer-links a {
     color: var(--gray-800);
-    font-size: 0.9rem;
+    font-size: 1rem;
     transition: var(--transition);
 }
 
@@ -1104,7 +1104,7 @@ h4 {
 
 .footer-contact a {
     color: var(--gray-800);
-    font-size: 0.9rem;
+    font-size: 1rem;
     transition: var(--transition);
     display: flex;
     align-items: center;
@@ -1128,7 +1128,7 @@ h4 {
 }
 
 .footer-bottom p {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     color: var(--gray-700);
 }
 
@@ -1332,6 +1332,16 @@ h4 {
     .footer-grid {
         grid-template-columns: 1fr;
         gap: 32px;
+        text-align: center;
+    }
+    
+    .footer-brand {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .footer-contact a {
+        justify-content: center;
     }
 
     /* About Stats */
