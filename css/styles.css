@@ -262,7 +262,7 @@ h4 {
 .nav-link {
     font-family: var(--font-heading);
     font-size: 0.8rem;
-    font-weight: 600;
+    font-weight: 800;
     letter-spacing: 1px;
     text-transform: uppercase;
     color: var(--gray-900);
@@ -299,7 +299,7 @@ h4 {
     white-space: nowrap;
     font-family: var(--font-heading);
     font-size: 0.75rem;
-    font-weight: 700;
+    font-weight: 800;
     letter-spacing: 1px;
     background: rgba(0, 0, 0, 0.05);
     border: 1px solid rgba(0, 0, 0, 0.15);
