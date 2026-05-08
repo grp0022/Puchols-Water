@@ -349,7 +349,7 @@ h4 {
 .nav-toggle span {
     width: 24px;
     height: 2px;
-    background: var(--white);
+    background: var(--gray-900);
     border-radius: 2px;
     transition: var(--transition);
 }
