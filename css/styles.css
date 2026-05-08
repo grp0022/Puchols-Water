@@ -882,19 +882,18 @@ h4 {
 
 .contact-icon {
     flex-shrink: 0;
-    width: 52px;
-    height: 52px;
-    background: var(--white);
-    border-radius: var(--radius);
+    width: 32px;
+    height: 32px;
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: var(--shadow-sm);
+    background: transparent;
+    box-shadow: none;
 }
 
 .contact-icon svg {
-    width: 24px;
-    height: 24px;
+    width: 28px;
+    height: 28px;
     color: var(--primary);
 }
 
@@ -925,20 +924,19 @@ h4 {
 
 
 .social-link {
-    width: 52px;
-    height: 52px;
-    background: var(--white);
-    border-radius: var(--radius);
+    width: 32px;
+    height: 32px;
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: var(--shadow-sm);
+    background: transparent;
+    box-shadow: none;
     transition: var(--transition);
 }
 
 .social-link svg {
-    width: 24px;
-    height: 24px;
+    width: 28px;
+    height: 28px;
     color: var(--primary);
     transition: var(--transition);
 }
@@ -956,13 +954,11 @@ h4 {
 }
 
 .social-link:hover {
-    background: var(--primary);
     transform: translateY(-3px);
-    box-shadow: var(--shadow-glow);
 }
 
 .social-link:hover svg {
-    color: var(--white);
+    color: var(--dark);
 }
 
 .facebook-text {
