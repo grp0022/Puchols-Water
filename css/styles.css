@@ -226,7 +226,7 @@ h4 {
 }
 
 .nav-logo img {
-    height: 75px;
+    height: 90px;
     width: auto;
     transition: var(--transition);
 }
@@ -248,7 +248,7 @@ h4 {
 }
 
 .navbar.scrolled .nav-logo img {
-    height: 80px;
+    height: 95px;
 }
 
 .nav-menu {
