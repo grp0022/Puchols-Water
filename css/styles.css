@@ -1048,7 +1048,7 @@ h4 {
    FOOTER
    ======================================== */
 .footer {
-    background: var(--dark);
+    background: var(--white);
     padding: 80px 0 0;
 }
 
@@ -1057,7 +1057,7 @@ h4 {
     grid-template-columns: 2fr 1fr 1fr;
     gap: 48px;
     padding-bottom: 48px;
-    border-bottom: 1px solid var(--gray-800);
+    border-bottom: 1px solid var(--gray-200);
 }
 
 .footer-logo {
@@ -1079,7 +1079,7 @@ h4 {
     font-weight: 700;
     letter-spacing: 2px;
     text-transform: uppercase;
-    color: var(--gray-400);
+    color: var(--gray-900);
     margin-bottom: 24px;
 }
 
@@ -1088,7 +1088,7 @@ h4 {
 }
 
 .footer-links a {
-    color: var(--gray-500);
+    color: var(--gray-800);
     font-size: 0.9rem;
     transition: var(--transition);
 }
@@ -1103,7 +1103,7 @@ h4 {
 }
 
 .footer-contact a {
-    color: var(--gray-500);
+    color: var(--gray-800);
     font-size: 0.9rem;
     transition: var(--transition);
 }
@@ -1120,7 +1120,7 @@ h4 {
 
 .footer-bottom p {
     font-size: 0.8rem;
-    color: var(--gray-600);
+    color: var(--gray-700);
 }
 
 /* ========================================
