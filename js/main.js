@@ -154,6 +154,7 @@ document.addEventListener('DOMContentLoaded', () => {
             e.preventDefault();
 
             const name = document.getElementById('formName').value;
+            const company = document.getElementById('formCompany').value;
             const email = document.getElementById('formEmail').value;
             const phone = document.getElementById('formPhone').value;
             const message = document.getElementById('formMessage').value;
@@ -178,8 +179,9 @@ document.addEventListener('DOMContentLoaded', () => {
                         access_key: '4e7b02a2-4168-496b-9a26-42407e067747',
                         subject: subject,
                         from_name: name,
+                        company_name: company || 'No especificado',
                         email: email,
-                        phone: phone,
+                        mobile_number: phone,
                         message: message,
                         replyto: email
                     })
