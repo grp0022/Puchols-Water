@@ -226,7 +226,7 @@ h4 {
 }
 
 .nav-logo img {
-    height: 115px;
+    height: 100px;
     width: auto;
     transition: var(--transition);
 }
