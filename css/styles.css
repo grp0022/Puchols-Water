@@ -879,7 +879,7 @@ h4 {
 
 .products-scope-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    grid-template-columns: 1fr;
     gap: 32px;
 }
 
@@ -912,6 +912,8 @@ h4 {
     list-style: none;
     padding: 0;
     margin: 0;
+    column-count: 2;
+    column-gap: 32px;
 }
 
 .scope-card ul li {
@@ -921,6 +923,8 @@ h4 {
     display: flex;
     align-items: flex-start;
     line-height: 1.5;
+    break-inside: avoid-column;
+    page-break-inside: avoid;
 }
 
 .scope-card ul li:last-child {
@@ -1397,6 +1401,10 @@ h4 {
     /* Products */
     .products-showcase {
         grid-template-columns: 1fr;
+    }
+
+    .scope-card ul {
+        column-count: 1;
     }
 
     /* Contact */
