@@ -903,43 +903,40 @@ h4 {
     font-family: var(--font-heading);
     font-size: 1.15rem;
     font-weight: 700;
-    margin-bottom: 20px;
+    margin-bottom: 24px;
     text-transform: uppercase;
     letter-spacing: 0.5px;
+    text-align: center;
 }
 
 .scope-card ul {
     list-style: none;
     padding: 0;
     margin: 0;
-    column-count: 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     column-gap: 32px;
+    row-gap: 16px;
 }
 
 .scope-card ul li {
-    font-size: 0.95rem;
-    color: var(--gray-600);
-    margin-bottom: 12px;
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: var(--dark);
     display: flex;
     align-items: flex-start;
     line-height: 1.5;
-    break-inside: avoid-column;
-    page-break-inside: avoid;
-}
-
-.scope-card ul li:last-child {
-    margin-bottom: 0;
 }
 
 .scope-card ul li::before {
     content: "";
     display: inline-block;
-    width: 6px;
-    height: 6px;
+    width: 8px;
+    height: 8px;
     background: var(--primary);
     border-radius: 50%;
     margin-right: 12px;
-    margin-top: 6px;
+    margin-top: 8px;
     flex-shrink: 0;
 }
 
@@ -1404,7 +1401,7 @@ h4 {
     }
 
     .scope-card ul {
-        column-count: 1;
+        grid-template-columns: 1fr;
     }
 
     /* Contact */
