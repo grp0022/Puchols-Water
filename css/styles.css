@@ -763,11 +763,17 @@ h4 {
     background: var(--gray-50);
 }
 
-.service-row-number {
-    font-family: var(--font-heading);
-    font-size: 1.25rem;
+.service-row-icon {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
     color: var(--gray-400);
-    font-weight: 500;
+    transition: var(--transition);
+}
+
+.service-row:hover .service-row-icon {
+    color: var(--primary);
+    transform: scale(1.1);
 }
 
 .service-row-title {
