@@ -563,15 +563,15 @@ h4 {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: 120px;
-    height: 80px;
+    width: 180px;
+    height: 120px;
     margin: 0 40px;
     vertical-align: middle;
 }
 
 .brand-item img {
-    width: 120px;
-    height: 80px;
+    width: 180px;
+    height: 120px;
     object-fit: contain;
     transition: var(--transition);
 }
