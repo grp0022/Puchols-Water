@@ -772,7 +772,7 @@ h4 {
 }
 
 .service-row:hover .service-row-icon {
-    color: var(--primary);
+    color: var(--gray-400);
     transform: scale(1.1);
 }
 
