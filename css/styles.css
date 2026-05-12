@@ -584,12 +584,12 @@ h4 {
     filter: invert(0.8);
 }
 
-.brand-item img.logo-scale-150 {
-    transform: scale(1.5);
+.brand-item.logo-scale-150 {
+    width: 270px;
 }
 
-.brand-item img.logo-scale-150:hover {
-    transform: scale(1.55);
+.brand-item.logo-scale-150 img {
+    width: 270px;
 }
 
 @keyframes marquee {
