@@ -519,15 +519,15 @@ h4 {
    BRANDS MARQUEE
    ======================================== */
 .brands-marquee {
-    background: rgba(47, 54, 64, 0.85);
+    background: rgba(245, 247, 250, 0.85);
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
     padding: 15px 0;
     overflow: hidden;
     white-space: nowrap;
     position: relative;
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
 }
 
 .brands-marquee::before,
@@ -542,12 +542,12 @@ h4 {
 
 .brands-marquee::before {
     left: 0;
-    background: linear-gradient(to right, #464e56, transparent);
+    background: linear-gradient(to right, #F5F7FA, transparent);
 }
 
 .brands-marquee::after {
     right: 0;
-    background: linear-gradient(to left, #464e56, transparent);
+    background: linear-gradient(to left, #F5F7FA, transparent);
 }
 
 .marquee-content {
