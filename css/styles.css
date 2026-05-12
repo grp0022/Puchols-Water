@@ -584,11 +584,11 @@ h4 {
     filter: invert(0.8);
 }
 
-.brand-item img.logo-impelmex-scale {
+.brand-item img.logo-scale-150 {
     transform: scale(1.5);
 }
 
-.brand-item img.logo-impelmex-scale:hover {
+.brand-item img.logo-scale-150:hover {
     transform: scale(1.55);
 }
 
