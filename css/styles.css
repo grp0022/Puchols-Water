@@ -519,13 +519,13 @@ h4 {
    BRANDS MARQUEE
    ======================================== */
 .brands-marquee {
-    background: var(--gray-100);
+    background: #D9F2FF;
     padding: 30px 0;
     overflow: hidden;
     white-space: nowrap;
     position: relative;
-    border-top: 1px solid rgba(0,0,0,0.05);
-    border-bottom: 1px solid rgba(0,0,0,0.05);
+    border-top: 1px solid rgba(0, 170, 255, 0.2);
+    border-bottom: 1px solid rgba(0, 170, 255, 0.2);
 }
 
 .brands-marquee::before,
@@ -540,12 +540,12 @@ h4 {
 
 .brands-marquee::before {
     left: 0;
-    background: linear-gradient(to right, var(--gray-100), transparent);
+    background: linear-gradient(to right, #D9F2FF, transparent);
 }
 
 .brands-marquee::after {
     right: 0;
-    background: linear-gradient(to left, var(--gray-100), transparent);
+    background: linear-gradient(to left, #D9F2FF, transparent);
 }
 
 .marquee-content {
@@ -558,14 +558,18 @@ h4 {
 }
 
 .brand-item {
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 120px;
+    height: 120px;
     margin: 0 40px;
     vertical-align: middle;
 }
 
 .brand-item img {
-    height: 60px;
-    width: auto;
+    width: 120px;
+    height: 120px;
     object-fit: contain;
     transition: var(--transition);
 }
