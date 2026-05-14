@@ -941,8 +941,8 @@ h4 {
 /* Products Section */
 .products .section-subtitle {
     max-width: 900px;
-    font-weight: 700;
-    color: var(--dark);
+    font-weight: bold;
+    color: var(--gray-600);
 }
 
 .products-scope-section {
