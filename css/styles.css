@@ -623,6 +623,22 @@ h4 {
     height: 150px;
 }
 
+.brand-item.logo-scale-150 {
+    width: 270px;
+}
+
+.brand-item.logo-scale-150 img {
+    width: 270px;
+}
+
+.brand-item.logo-scale-200 {
+    width: 360px;
+}
+
+.brand-item.logo-scale-200 img {
+    width: 360px;
+}
+
 .logo-dark-gray {
     filter: invert(0.8);
 }
