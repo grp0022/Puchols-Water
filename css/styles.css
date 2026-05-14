@@ -613,6 +613,16 @@ h4 {
     width: 207px;
 }
 
+.brand-item.logo-scale-125 {
+    width: 225px;
+    height: 150px;
+}
+
+.brand-item.logo-scale-125 img {
+    width: 225px;
+    height: 150px;
+}
+
 @keyframes marquee {
     0% { transform: translateX(0); }
     100% { transform: translateX(-50%); }
