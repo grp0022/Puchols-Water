@@ -656,6 +656,8 @@ h4 {
 .services .section-subtitle {
     font-weight: bold;
     white-space: nowrap;
+    max-width: none;
+    text-align: center;
 }
 /* ========================================
    SECTIONS (GLOBAL)
