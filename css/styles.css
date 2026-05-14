@@ -648,6 +648,15 @@ h4 {
     100% { transform: translateX(-50%); }
 }
 
+.service-row-desc {
+    font-weight: bold;
+    text-align: justify;
+}
+
+.services .section-subtitle {
+    font-weight: bold;
+    white-space: nowrap;
+}
 /* ========================================
    SECTIONS (GLOBAL)
    ======================================== */
