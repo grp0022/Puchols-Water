@@ -1022,7 +1022,8 @@ h4 {
 .about .section-title,
 .services .section-title,
 .contact .section-title,
-.alliances .section-title {
+.alliances .section-title,
+.products .section-title {
     color: var(--primary);
 }
 
