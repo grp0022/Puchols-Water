@@ -770,7 +770,7 @@ h4 {
 .stat-desc {
     font-size: 0.95rem;
     font-weight: 600;
-    color: var(--gray-500);
+    color: var(--primary);
 }
 
 /* ========================================
