@@ -1018,6 +1018,12 @@ h4 {
 /* ========================================
    CONTACT
    ======================================== */
+.alliances .section-subtitle {
+    font-weight: bold;
+    text-align: center;
+    max-width: 100%;
+}
+
 .contact {
     background: var(--gray-100);
 }
