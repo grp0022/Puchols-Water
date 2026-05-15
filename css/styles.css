@@ -764,7 +764,7 @@ h4 {
     font-size: 1rem;
     font-weight: 700;
     margin-bottom: 4px;
-    flex: 0 0 160px; /* Forces uniform width so descriptions align */
+    flex: 0 0 110px; /* Forces uniform width and wraps to two lines */
 }
 
 .stat-desc {
