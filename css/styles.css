@@ -1074,46 +1074,96 @@ h4 {
 }
 
 /* ========== STAFF ========== */
+.staff-dark {
+    background: var(--dark-2);
+    color: var(--white);
+    position: relative;
+    overflow: hidden;
+}
+
 .staff-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
-    margin-top: 40px;
+    gap: 40px;
+    margin-top: 50px;
+    position: relative;
+    z-index: 2;
 }
 
 .staff-card.president {
     grid-column: 1 / -1;
-    max-width: 360px;
+    max-width: 380px;
     width: 100%;
-    margin: 0 auto;
+    margin: 0 auto 20px auto;
+    position: relative;
+}
+
+/* Glow behind president */
+.staff-card.president::before {
+    content: '';
+    position: absolute;
+    top: -15px; right: -15px; bottom: -15px; left: -15px;
+    background: var(--primary);
+    filter: blur(25px);
+    border-radius: var(--radius);
+    z-index: -1;
+    opacity: 0.15;
+    transition: var(--transition-slow);
+}
+
+.staff-card.president:hover::before {
+    opacity: 0.35;
+    filter: blur(30px);
 }
 
 .staff-card {
-    background: var(--white);
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
     border-radius: var(--radius);
-    box-shadow: var(--shadow-sm);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
     transition: var(--transition);
     overflow: hidden;
     aspect-ratio: 1.75;
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+}
+
+/* Shine effect */
+.staff-card::after {
+    content: '';
+    position: absolute;
+    top: 0; left: -100%; width: 50%; height: 100%;
+    background: linear-gradient(to right, transparent, rgba(255,255,255,0.1), transparent);
+    transform: skewX(-20deg);
+    transition: 0.7s ease-in-out;
+    z-index: 2;
+    pointer-events: none;
+}
+
+.staff-card:hover::after {
+    left: 150%;
 }
 
 .staff-card:hover {
-    transform: translateY(-5px);
-    box-shadow: var(--shadow-md);
+    transform: translateY(-8px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.5);
+    border-color: rgba(0, 170, 255, 0.3);
 }
 
 .staff-card-img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    transition: var(--transition);
+    transition: var(--transition-slow);
+    z-index: 1;
 }
 
 .staff-card:hover .staff-card-img {
-    transform: scale(1.03);
+    transform: scale(1.05);
 }
 
 .contact {
