@@ -1067,9 +1067,7 @@ h4 {
     border-color: var(--primary);
 }
 
-.alliance-card:first-child:hover {
-    transform: scale(2.0);
-}
+
 
 .contact {
     background: var(--gray-100);
