@@ -1033,32 +1033,34 @@ h4 {
 .alliance-card {
     background: var(--white);
     border-radius: 12px;
-    overflow: hidden;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
-    transition: var(--transition);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); /* Bouncy spring transition */
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 20px;
     border: 1px solid var(--gray-200);
     aspect-ratio: 4/3;
+    position: relative;
+    z-index: 1;
 }
 
 .alliance-card img {
     max-width: 100%;
     max-height: 100%;
     object-fit: contain;
-    transition: var(--transition);
+    transition: all 0.4s ease;
 }
 
 .alliance-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transform: scale(1.3);
+    z-index: 10;
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.2);
     border-color: var(--primary);
 }
 
 .alliance-card:hover img {
-    transform: scale(1.02);
+    transform: scale(1.05);
 }
 
 .contact {
