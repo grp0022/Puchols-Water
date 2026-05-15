@@ -1073,7 +1073,41 @@ h4 {
     border-color: var(--primary);
 }
 
+/* ========== STAFF ========== */
+.staff-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
 
+.staff-card {
+    background: var(--white);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow-sm);
+    transition: var(--transition);
+    overflow: hidden;
+    aspect-ratio: 1.75;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.staff-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-md);
+}
+
+.staff-card-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: var(--transition);
+}
+
+.staff-card:hover .staff-card-img {
+    transform: scale(1.03);
+}
 
 .contact {
     background: var(--gray-100);
