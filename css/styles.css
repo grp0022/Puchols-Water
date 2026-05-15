@@ -1023,6 +1023,44 @@ h4 {
     max-width: 100%;
 }
 
+.alliances-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.alliance-card {
+    background: var(--white);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    transition: var(--transition);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border: 1px solid var(--gray-200);
+    aspect-ratio: 4/3;
+}
+
+.alliance-card img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    transition: var(--transition);
+}
+
+.alliance-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    border-color: var(--primary);
+}
+
+.alliance-card:hover img {
+    transform: scale(1.02);
+}
+
 .contact {
     background: var(--gray-100);
 }
