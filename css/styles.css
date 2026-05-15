@@ -764,6 +764,7 @@ h4 {
     font-size: 1rem;
     font-weight: 700;
     margin-bottom: 4px;
+    flex: 0 0 160px; /* Forces uniform width so descriptions align */
 }
 
 .stat-desc {
@@ -1427,6 +1428,10 @@ h4 {
         text-align: center;
         align-items: center;
         padding: 24px 16px;
+    }
+
+    .stat-title {
+        flex: auto;
     }
 }
 
