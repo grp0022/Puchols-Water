@@ -1005,12 +1005,14 @@ h4 {
 .scope-card ul li::before {
     content: "";
     display: inline-block;
-    width: 8px;
-    height: 8px;
-    background: var(--primary);
-    border-radius: 50%;
+    width: 18px;
+    height: 18px;
+    background-image: url('../images/Gota.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
     margin-right: 12px;
-    margin-top: 8px;
+    margin-top: 4px;
     flex-shrink: 0;
 }
 
