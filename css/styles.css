@@ -1019,6 +1019,9 @@ h4 {
 /* ========================================
    CONTACT
    ======================================== */
+.about .section-title,
+.services .section-title,
+.contact .section-title,
 .alliances .section-title {
     color: var(--primary);
 }
