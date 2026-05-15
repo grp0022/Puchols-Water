@@ -128,7 +128,7 @@ document.addEventListener('DOMContentLoaded', () => {
             translatableElements.forEach(el => {
                 const text = el.getAttribute(`data-${currentLang}`);
                 if (text) {
-                    el.textContent = text;
+                    el.innerHTML = text;
                 }
             });
 
