@@ -827,6 +827,12 @@ h4 {
     transition: var(--transition);
 }
 
+@media (min-width: 993px) {
+    .service-row-title {
+        white-space: nowrap;
+    }
+}
+
 .service-row:hover .service-row-title {
     color: var(--primary);
     transform: translateX(10px);
