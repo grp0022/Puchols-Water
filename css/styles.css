@@ -256,9 +256,8 @@ h4 {
 .nav-menu {
     display: flex;
     gap: 8px;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
+    flex: 1;
+    justify-content: center;
 }
 
 .nav-link {
