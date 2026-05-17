@@ -1153,9 +1153,7 @@ h4 {
 
 .staff-card-img {
     width: 100%;
-    aspect-ratio: 1.75;
-    object-fit: cover;
-    object-position: top;
+    height: auto;
     display: block;
     transition: var(--transition-slow);
     z-index: 1;
