@@ -680,8 +680,15 @@ h4 {
     transform: scale(0.85);
 }
 
+.brand-item.logo-reduce-30 img {
+    transform: scale(0.7);
+}
+.brand-item.logo-reduce-30 img:hover {
+    transform: scale(0.75);
+}
+
 .logo-dark-gray {
-    filter: invert(0.35);
+    filter: brightness(0);
 }
 
 @keyframes marquee {
