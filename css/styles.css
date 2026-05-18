@@ -682,8 +682,7 @@ h4 {
 
 .services .section-subtitle {
     font-weight: bold;
-    white-space: nowrap;
-    max-width: none;
+    white-space: normal;
     text-align: center;
 }
 /* ========================================
@@ -1629,11 +1628,15 @@ h4 {
         background: transparent;
     }
     .navbar.scrolled {
-        position: fixed;
-        top: 0;
-        background: var(--white) !important;
-        box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-        padding: 10px 0;
+        position: fixed !important;
+        top: 0 !important;
+        left: 0 !important;
+        right: 0 !important;
+        width: 100% !important;
+        background: #ffffff !important;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.1) !important;
+        padding: 10px 0 !important;
+        z-index: 9999 !important;
     }
     .navbar .nav-container {
         display: flex;
