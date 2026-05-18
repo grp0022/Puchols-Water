@@ -638,6 +638,14 @@ h4 {
     width: 360px;
 }
 
+.brand-item.logo-boost-10 img {
+    transform: scale(1.1);
+}
+
+.brand-item.logo-boost-10 img:hover {
+    transform: scale(1.15);
+}
+
 .logo-dark-gray {
     filter: invert(0.8);
 }
