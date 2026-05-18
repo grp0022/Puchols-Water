@@ -564,7 +564,7 @@ h4 {
 
 .marquee-content {
     display: inline-block;
-    animation: marquee 120s linear infinite;
+    animation: marquee 108s linear infinite;
 }
 
 .marquee-content:hover {
