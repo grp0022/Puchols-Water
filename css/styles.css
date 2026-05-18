@@ -662,7 +662,8 @@ h4 {
 
 .services .section-subtitle {
     font-weight: bold;
-    white-space: normal;
+    white-space: nowrap;
+    max-width: none;
     text-align: center;
 }
 /* ========================================
@@ -1601,23 +1602,6 @@ h4 {
     }
 
     /* Nav */
-    .navbar {
-        position: absolute;
-        top: auto;
-        width: 100%;
-        background: transparent;
-    }
-    .navbar.scrolled {
-        position: fixed;
-        top: 0;
-        background: rgba(255, 255, 255, 0.95);
-        backdrop-filter: blur(20px);
-        -webkit-backdrop-filter: blur(20px);
-        box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-    }
-    .nav-actions {
-        display: none;
-    }
     .navbar .nav-container {
         display: flex;
         justify-content: center;
@@ -1631,14 +1615,12 @@ h4 {
     }
     .nav-logo {
         margin: 0 auto;
-        display: flex;
-        align-items: center;
     }
     .nav-logo img {
-        height: 45px;
+        height: 85px;
     }
     .navbar.scrolled .nav-logo img {
-        height: 40px;
+        height: 75px;
     }
     .nav-actions > .lang-toggle {
         display: none; /* Hide original in header */
