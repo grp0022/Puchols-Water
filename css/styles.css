@@ -1641,18 +1641,20 @@ h4 {
         align-items: center;
         position: relative;
     }
-    .nav-toggle {
-        display: flex;
+    .nav-actions {
         position: absolute;
         left: 24px;
+        top: 50%;
+        transform: translateY(-50%);
         z-index: 1002;
     }
+    .nav-toggle {
+        display: flex;
+        position: relative;
+        left: 0;
+    }
     .nav-logo {
-        position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
         margin: 0;
-        z-index: 1001;
     }
     .nav-logo img {
         height: 85px;
