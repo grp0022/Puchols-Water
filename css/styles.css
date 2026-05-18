@@ -659,11 +659,25 @@ h4 {
     transform: scale(1.25);
 }
 
+.brand-item.logo-boost-25 img {
+    transform: scale(1.25);
+}
+.brand-item.logo-boost-25 img:hover {
+    transform: scale(1.30);
+}
+
 .brand-item.logo-reduce-10 img {
     transform: scale(0.9);
 }
 .brand-item.logo-reduce-10 img:hover {
     transform: scale(0.95);
+}
+
+.brand-item.logo-reduce-20 img {
+    transform: scale(0.8);
+}
+.brand-item.logo-reduce-20 img:hover {
+    transform: scale(0.85);
 }
 
 .logo-dark-gray {
