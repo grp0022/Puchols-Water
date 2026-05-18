@@ -667,7 +667,7 @@ h4 {
 }
 
 .logo-dark-gray {
-    filter: invert(0.6);
+    filter: invert(0.35);
 }
 
 @keyframes marquee {
