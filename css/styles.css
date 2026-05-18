@@ -497,7 +497,7 @@ h4 {
     font-size: 1.3rem;
     color: var(--white);
     font-weight: 500;
-    text-shadow: 0 2px 4px #000, 0 4px 12px #000, 0 0 20px #000, 0 0 40px #000, 0 0 80px #000;
+    text-shadow: 0 2px 4px var(--primary), 0 4px 12px var(--primary), 0 0 20px var(--primary), 0 0 40px var(--primary), 0 0 80px var(--primary);
     max-width: 700px;
     margin: 0 auto 40px;
     line-height: 1.8;
