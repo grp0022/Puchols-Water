@@ -666,6 +666,13 @@ h4 {
     transform: scale(1.30);
 }
 
+.brand-item.logo-reduce-5 img {
+    transform: scale(0.95);
+}
+.brand-item.logo-reduce-5 img:hover {
+    transform: scale(1.0);
+}
+
 .brand-item.logo-reduce-10 img {
     transform: scale(0.9);
 }
