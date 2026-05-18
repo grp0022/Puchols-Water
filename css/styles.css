@@ -654,7 +654,8 @@ h4 {
 
 .services .section-subtitle {
     font-weight: bold;
-    white-space: normal;
+    white-space: nowrap;
+    max-width: none;
     text-align: center;
 }
 /* ========================================
@@ -1593,24 +1594,10 @@ h4 {
     }
 
     /* Nav */
-    .navbar {
-        background: transparent;
-        padding: 15px 0;
-        position: absolute;
-        top: auto;
-        width: 100%;
-    }
-    .navbar.scrolled {
-        position: fixed;
-        top: 0;
-        background: rgba(255, 255, 255, 0.95);
-        box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-    }
     .navbar .nav-container {
         display: flex;
         justify-content: center;
         align-items: center;
-        position: relative;
     }
     .nav-toggle {
         display: flex;
@@ -1618,20 +1605,14 @@ h4 {
         left: 24px;
         z-index: 1002;
     }
-    .nav-actions {
-        display: none;
-    }
     .nav-logo {
         margin: 0 auto;
-        display: flex;
-        justify-content: center;
-        align-items: center;
     }
     .nav-logo img {
-        height: 45px;
+        height: 85px;
     }
     .navbar.scrolled .nav-logo img {
-        height: 40px;
+        height: 75px;
     }
     .nav-actions > .lang-toggle {
         display: none; /* Hide original in header */
