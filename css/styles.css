@@ -1180,7 +1180,7 @@ h4 {
     transition: var(--transition);
     overflow: hidden;
     position: relative;
-    aspect-ratio: 1.85;
+    aspect-ratio: 1.55;
 }
 
 /* Shine effect */
@@ -1210,7 +1210,7 @@ h4 {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    object-position: center;
+    object-position: center 80%;
     display: block;
     transition: var(--transition-slow);
     z-index: 1;
@@ -1241,17 +1241,17 @@ h4 {
 }
 
 .overlay-phone1 {
-    top: 69.5%; left: 12%;
+    top: 68%; left: 12%;
     width: 43%; height: 8%;
 }
 
 .overlay-phone2 {
-    top: 80.5%; left: 12%;
+    top: 79%; left: 12%;
     width: 43%; height: 8%;
 }
 
 .overlay-email {
-    top: 89.5%; left: 12%;
+    top: 88.5%; left: 12%;
     width: 70%; height: 8%;
 }
 
