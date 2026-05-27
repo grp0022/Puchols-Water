@@ -1180,7 +1180,7 @@ h4 {
     transition: var(--transition);
     overflow: hidden;
     position: relative;
-    aspect-ratio: 1.55;
+    aspect-ratio: 1.52;
 }
 
 /* Shine effect */
@@ -1210,7 +1210,7 @@ h4 {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    object-position: center 80%;
+    object-position: bottom;
     display: block;
     transition: var(--transition-slow);
     z-index: 1;
