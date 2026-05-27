@@ -1180,7 +1180,7 @@ h4 {
     transition: var(--transition);
     overflow: hidden;
     position: relative;
-    /* Removed aspect-ratio, display: flex, justify-content, align-items so it fits image perfectly */
+    aspect-ratio: 1.85;
 }
 
 /* Shine effect */
@@ -1208,7 +1208,9 @@ h4 {
 
 .staff-card-img {
     width: 100%;
-    height: auto;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
     display: block;
     transition: var(--transition-slow);
     z-index: 1;
