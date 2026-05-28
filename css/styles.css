@@ -564,7 +564,7 @@ h4 {
 
 .marquee-content {
     display: inline-block;
-    animation: marquee 97s linear infinite;
+    animation: marquee 88s linear infinite;
 }
 
 .marquee-content:hover {
@@ -638,6 +638,13 @@ h4 {
     width: 360px;
 }
 
+.brand-item.logo-boost-5 img {
+    transform: scale(1.05);
+}
+.brand-item.logo-boost-5 img:hover {
+    transform: scale(1.10);
+}
+
 .brand-item.logo-boost-10 img {
     transform: scale(1.1);
 }
@@ -664,6 +671,13 @@ h4 {
 }
 .brand-item.logo-boost-25 img:hover {
     transform: scale(1.30);
+}
+
+.brand-item.logo-boost-30 img {
+    transform: scale(1.30);
+}
+.brand-item.logo-boost-30 img:hover {
+    transform: scale(1.35);
 }
 
 .brand-item.logo-reduce-5 img {
