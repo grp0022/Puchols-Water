@@ -1660,6 +1660,12 @@ h4 {
         margin-bottom: 48px;
     }
 
+    /* Hero */
+    .hero-subtitle {
+        text-align: center;
+        font-size: 1.1rem;
+    }
+
     /* Top Bar Mobile */
     .top-bar {
         padding: 8px 0;
