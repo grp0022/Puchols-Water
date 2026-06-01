@@ -1537,15 +1537,14 @@ h4 {
 
 .footer-social {
     display: flex;
-    gap: 16px;
+    justify-content: space-between;
+    width: 100%;
     margin-top: 16px;
-    padding-left: 24px;
 }
 
 @media (max-width: 768px) {
     .footer-social {
-        padding-left: 0;
-        justify-content: center;
+        justify-content: space-between;
     }
 }
 
