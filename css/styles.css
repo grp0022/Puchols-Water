@@ -1089,6 +1089,19 @@ h4 {
     flex-shrink: 0;
 }
 
+/* Reorder Processes List for Spanish (Pyramid Effect) */
+html[lang="es"] .processes-list li:nth-child(1) { order: 5; } /* Herramientas */
+html[lang="es"] .processes-list li:nth-child(2) { order: 2; } /* Filtros */
+html[lang="es"] .processes-list li:nth-child(3) { order: 1; } /* Grúas */
+html[lang="es"] .processes-list li:nth-child(4) { order: 4; } /* Generadores */
+html[lang="es"] .processes-list li:nth-child(5) { order: 3; } /* Compresores */
+html[lang="es"] .processes-list li:nth-child(6) { order: 6; } /* Ósmosis Inversa */
+html[lang="es"] .processes-list li:nth-child(7) { order: 7; } /* Alimentadores Volumétricos */
+html[lang="es"] .processes-list li:nth-child(8) { order: 8; } /* Transformadores Eléctricos */
+html[lang="es"] .processes-list li:nth-child(9) { order: 11; } /* Suministros de Seguridad Industrial */
+html[lang="es"] .processes-list li:nth-child(10) { order: 10; } /* Válvulas de Cierre de Emergencia */
+html[lang="es"] .processes-list li:nth-child(11) { order: 9; } /* Suministros de Energía Renovable */
+html[lang="es"] .processes-list li:nth-child(12) { order: 12; } /* Torres Lavadoras para Control de Olores */
 
 /* ========================================
    CONTACT
