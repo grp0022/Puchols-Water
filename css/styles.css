@@ -1864,7 +1864,8 @@ html[lang="es"] .processes-list li:nth-child(12) { order: 12; } /* Torres Lavado
 
     .services .section-subtitle,
     .products .section-subtitle,
-    .alliances .section-subtitle {
+    .alliances .section-subtitle,
+    .contact .section-subtitle {
         text-align: justify;
         text-justify: inter-word;
         hyphens: auto;
