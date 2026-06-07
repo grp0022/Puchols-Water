@@ -1861,6 +1861,16 @@ html[lang="es"] .processes-list li:nth-child(12) { order: 12; } /* Torres Lavado
         width: 100%;
         max-width: 280px;
     }
+
+    .services .section-subtitle,
+    .products .section-subtitle,
+    .alliances .section-subtitle {
+        text-align: justify;
+        text-justify: inter-word;
+        hyphens: auto;
+        -webkit-hyphens: auto;
+        padding: 0 10px;
+    }
 }
 
 @media (max-width: 480px) {
