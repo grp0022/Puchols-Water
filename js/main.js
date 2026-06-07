@@ -137,8 +137,24 @@ document.addEventListener('DOMContentLoaded', () => {
 
             // Update form placeholders
             updateFormLabels();
+            
+            // Re-sort processes pyramid dynamically
+            sortProcessesPyramid();
         });
     });
+
+    function sortProcessesPyramid() {
+        const list = document.querySelector('.processes-list');
+        if (!list) return;
+        const items = Array.from(list.querySelectorAll('li'));
+        // Sort by length
+        items.sort((a, b) => a.textContent.trim().length - b.textContent.trim().length);
+        // Append them back in sorted order
+        items.forEach(item => list.appendChild(item));
+    }
+
+    // Run sort once on initial load
+    sortProcessesPyramid();
 
     function updateFormLabels() {
         const labels = document.querySelectorAll('.form-group label');
