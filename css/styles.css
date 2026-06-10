@@ -494,7 +494,7 @@ h4 {
 }
 
 .hero-subtitle {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     color: var(--white);
     font-weight: bold;
     text-shadow: 0 2px 4px #000, 0 4px 12px #000, 0 0 20px #000, 0 0 40px #000, 0 0 80px #000;
@@ -1686,8 +1686,8 @@ html[lang="es"] .processes-list li:nth-child(12) { order: 12; } /* Torres Lavado
         text-justify: inter-word;
         hyphens: auto;
         -webkit-hyphens: auto;
-        font-size: 1.2rem;
-        padding-right: 5px;
+        font-size: 1.1rem;
+        margin-bottom: 30px;
     }
 
     /* Top Bar Mobile */
