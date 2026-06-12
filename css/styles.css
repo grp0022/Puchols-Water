@@ -62,6 +62,12 @@ html {
     font-size: 1.15em;
 }
 
+.text-heavy-white {
+    color: var(--white) !important;
+    font-weight: 900 !important;
+    font-size: 1.15em;
+}
+
 body {
     font-family: var(--font-body);
     color: var(--gray-800);
