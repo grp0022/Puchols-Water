@@ -52,6 +52,11 @@ html {
 
 .text-primary {
     color: var(--primary) !important;
+    font-weight: 900 !important;
+}
+
+.text-heavy {
+    font-weight: 900 !important;
 }
 
 body {
@@ -1681,6 +1686,10 @@ html[lang="es"] .processes-list li:nth-child(12) { order: 12; } /* Torres Lavado
     }
 
     /* Hero */
+    .hero-content {
+        margin-top: 100px;
+    }
+
     .hero-title-line {
         white-space: normal;
     }
