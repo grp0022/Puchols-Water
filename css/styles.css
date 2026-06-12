@@ -56,6 +56,7 @@ html {
 }
 
 .text-heavy {
+    color: #000 !important;
     font-weight: 900 !important;
 }
 
