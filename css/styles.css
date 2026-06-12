@@ -53,11 +53,13 @@ html {
 .text-primary {
     color: var(--primary) !important;
     font-weight: 900 !important;
+    font-size: 1.15em;
 }
 
 .text-heavy {
     color: #000 !important;
     font-weight: 900 !important;
+    font-size: 1.15em;
 }
 
 body {
